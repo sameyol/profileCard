@@ -1,16 +1,70 @@
-# React + Vite
+🌟 Profile App — React + Tailwind CSS + React Router
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fully accessible, responsive, and semantic multi-page React application built using modern frontend patterns.
+This project includes a Profile Card, a Contact Us page with form validation, and an About Me page for reflection. All designed with great UX/UI and test-ready data-testid attributes.
 
-Currently, two official plugins are available:
+✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+✅ Profile Card — displays user info, bio, hobbies, dislikes, social links, and a live timestamp
+✅ Contact Us Page — includes accessible form validation with success and error states
+✅ About Me Page — semantically structured reflection sections
+✅ Accessible by Design — semantic HTML, keyboard navigation, ARIA labels
+✅ Responsive Layout — mobile-first with Tailwind Flex/Grid
+✅ Dynamic Routing — powered by React Router’s <NavLink>
+✅ Clean UI/UX — simple, modern, and easy to navigate
+✅ Automated Test Support — every interactive or visible element has a data-testid
 
-## React Compiler
+🧩 Pages Overview
+🏠 Profile Card Page (/)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Displays user avatar, name, bio, current time, social links, hobbies, and dislikes
 
-## Expanding the ESLint configuration
+Live time updates every second
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Semantic structure with <article>, <figure>, <section>, etc.
+
+📩 Contact Us Page (/contact)
+
+Form fields with validation:
+
+Full name (test-contact-name)
+
+Email (test-contact-email)
+
+Subject (test-contact-subject)
+
+Message (test-contact-message)
+
+Validation messages (e.g. test-contact-error-email)
+
+Displays a success message on valid submission (test-contact-success)
+
+All inputs are labeled, ARIA-linked, and keyboard accessible
+
+🧘 About Me Page (/about)
+
+Structured into reflective sections:
+
+Bio (test-about-bio)
+
+Goals (test-about-goals)
+
+Low confidence areas (test-about-confidence)
+
+Note to future self (test-about-future-note)
+
+Extra thoughts (test-about-extra)
+
+Fully semantic using <main> and <section>
+
+🎨 UI & Accessibility
+
+Built with mobile-first Tailwind responsive utilities
+
+Keyboard navigable — tab-friendly forms and links
+
+Semantic HTML elements (<main>, <header>, <section>, <figure>, <nav>)
+
+Color contrast and spacing ensure readability
+
+Works smoothly on mobile, tablet, and desktop
